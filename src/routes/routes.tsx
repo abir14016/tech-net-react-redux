@@ -5,8 +5,8 @@ import NotFound from '@/pages/NotFound';
 import Home from '@/pages/Home';
 import Products from '@/pages/Products';
 import Checkout from '@/pages/Checkout';
-import Signup from '@/pages/Signup';
 import ProductDetails from '@/pages/ProductDetails';
+import SignupForm from '@/components/SignUpForm';
 
 const routes = createBrowserRouter([
   {
@@ -37,7 +37,7 @@ const routes = createBrowserRouter([
   },
   {
     path: '/signup',
-    element: <Signup />,
+    element: <SignupForm />,
   },
   {
     path: '*',

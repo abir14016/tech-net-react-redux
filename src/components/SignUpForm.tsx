@@ -9,7 +9,7 @@ import { Label } from '@/components/ui/label';
 
 type UserAuthFormProps = React.HTMLAttributes<HTMLDivElement>;
 
-export function SignupForm({ className, ...props }: UserAuthFormProps) {
+export default function SignupForm({ className, ...props }: UserAuthFormProps) {
   const [isLoading, setIsLoading] = React.useState<boolean>(false);
 
   async function onSubmit(event: React.SyntheticEvent) {
